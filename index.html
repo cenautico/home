@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CENAUTICO</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">CENAUTICO</div>
+    <ul class="nav-links">
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#apostilas">Apostilas</a></li>
+      <li><a href="#cartas">Cartas</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">CENAUTICO</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="#cursos" onclick="toggleMenu()">Cursos</a></li>
+        <li><a href="#apostilas" onclick="toggleMenu()">Apostilas</a></li>
+        <li><a href="#cartas" onclick="toggleMenu()">Cartas Náuticas</a></li>
+        <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="canvas-container" style="width: 80vw; height: 100vh;"></div>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img loading="lazy" src="./assets/profile-pic.png" alt="CENAUTICO logo" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Bem Vindo(a) ao</p>
+      <h1 class="title">CENAUTICO</h1>
+      <p class="section__text__p2">Centro de Ensino Náutico</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="location.href='#apostilas'">
+          Nossas Apostilas
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contato'">
+          Informações de Contato
+        </button>
+      </div>
+      <div id="socials-container">
+        <img loading="lazy" src="./assets/whatsapp-icon.png" alt="Nosso WhatsApp" class="icon" onclick="location.href='https://api.whatsapp.com/send?phone=554799419923'" />
+        <img loading="lazy" src="./assets/email.png" alt="Nosso Contato" class="icon" onclick="location.href='mailto:CENAUTICO01@gmail.com'" />
+      </div>
+    </div>
+  </section>
+
+  <section id="cursos">
+    <p class="section__text__p1">Conheça nossos</p>
+    <h1 class="title">Cursos</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img loading="lazy" src="./assets/about-pic.png" alt="Profile picture" class="cursos-pic" />
+      </div>
+      <div class="cursos-details-container">
+        <div class="cursos-containers">
+          <div class="details-container">
+            <img loading="lazy" src="./assets/YouTube_dark_icon.png" alt="Youtube icon" class="icon" onclick="location.href='https://www.youtube.com/channel/UCiNoKjRKzMVfYONO9DLib3Q'" />
+            <h3 onclick="location.href='https://www.youtube.com/channel/UCiNoKjRKzMVfYONO9DLib3Q'">Curso Gratuito no Youtube</h3>
+            <p>Questões de Prova<br />Conceitos Básicos</p>
+          </div>
+          <div class="details-container">
+            <img loading="lazy" src="./assets/itch-io-icon.png" alt="Itch.io icon" class="icon" onclick="location.href='https://CENAUTICO.itch.io/'" />
+            <h3 onclick="location.href='https://CENAUTICO.itch.io/'">Curso Avançado de Mestre Amador</h3>
+            <p>Do início ao avançado<br />Aulas exclusivas</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            O CENAUTICO se orgulha em anunciar que o curso para mestre amador está disponível de forma remota, desenvolvido para levar em conta o tempo, e as dificuldades dos estudantes, observadas ao longo dos anos. O curso apresenta uma experiência de aprendizado que garante qualidade e confiança.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img loading="lazy" src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#apostilas'" />
+  </section>
+
+  <section id="apostilas">
+    <p class="section__text__p1">Para seu desenvolvimento na área náutica de uma olhada em nossas</p>
+    <h1 class="title">Apostilas</h1>
+    <div class="apostilas-details-container">
+      <div class="cursos-containers" >
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/caderno_de_questoes.png" data-src="./assets/caderno_de_questoes.png" alt="Apostila Arrais-Amador e Motonauta" style="max-height: 300px"/>
+          </div>
+          <h2 class="apostilas-sub-title project-title">Caderno de Exercícios Mestre Amador</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://'">
+              R$999,99 Hotmart
+            </button>
+          </div>
+        </div>
+        <br>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/caderno_de_questoes.png" data-src="./assets/caderno_de_questoes.png" alt="Apostila Arrais-Amador e Motonauta" style="max-height: 300px"/>
+          </div>
+          <h2 class="apostilas-sub-title project-title">Caderno de Exercícios Mestre Amador</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://'">
+              R$999,99 Hotmart
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/caderno_de_questoes.png" data-src="./assets/caderno_de_questoes.png" alt="Apostila Arrais-Amador e Motonauta" style="max-height: 300px"/>
+          </div>
+          <h2 class="apostilas-sub-title project-title">Caderno de Exercícios Mestre Amador</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://'">
+              R$999,99 Hotmart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cartas" class="slider-container">
+    <p class="section__text__p1">Para a pratica de exercícios ou navegação, cheque nossas</p>
+    <h1 class="title">Cartas Náuticas</h1>
+    <div class="apostilas-details-container">
+      <div class="cursos-containers" >
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/carta.png" data-src="./assets/carta.png" alt="Apostila Arrais-Amador e Motonauta" style="max-height: 200px"/>
+          </div>
+          <h2 class="apostilas-sub-title project-title">Caderno de Exercícios Mestre Amador</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://'">
+              R$999,99 Hotmart
+            </button>
+          </div>
+        </div>
+        <br>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/carta.png" data-src="./assets/carta.png" alt="Apostila Arrais-Amador e Motonauta" style="max-height: 200px"/>
+          </div>
+          <h2 class="apostilas-sub-title project-title">Caderno de Exercícios Mestre Amador</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://'">
+              R$999,99 Hotmart
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/carta.png" data-src="./assets/carta.png" alt="Apostila Arrais-Amador e Motonauta" style="max-height: 200px"/>
+          </div>
+          <h2 class="apostilas-sub-title project-title">Caderno de Exercícios Mestre Amador</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://'">
+              R$999,99 Hotmart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img loading="lazy" src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contato'" />
+  </section>
+  
+
+  <section id="contato">
+    <p class="section__text__p1">Gostaria de fazer um pedido, ou enviar uma dica?</p>
+    <h1 class="title">Contato</h1>
+    <div class="contato-info-upper-container">
+      <div class="contato-info-container">
+        <img loading="lazy" src="./assets/email.png" alt="Email icon" class="icon contato-icon email-icon" />
+        <p><a href="mailto:CENAUTICO01@gmail.com">CENAUTICO01@gmail.com</a></p>
+      </div>
+      <div class="contato-info-container">
+        <img loading="lazy" src="./assets/whatsapp-icon.png" alt="Nosso WhatsApp" class="icon" onclick="location.href='https://api.whatsapp.com/send?phone=554799419923'" />
+        <p><a onclick="location.href='https://api.whatsapp.com/send?phone=554799419923'">Nosso WhatsApp</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#apostilas">Apostilas</a></li>
+        <li><a href="#cartas">Cartas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <p>Copyright &#169; 2024 CENAUTICO. Todos os direitos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
